@@ -147,14 +147,42 @@
       <div class="wrap">
         <div class="section__head">
           <h2>Books</h2>
-          <p class="section__sub">A few core collections, presented cleanly. Click a book for details.</p>
+          <p class="section__sub">Selected collections, presented cleanly. Click a book for details.</p>
         </div>
 
         <div class="grid" role="list">
           <!-- Book 1 -->
           <button class="book" role="listitem" type="button"
+                  data-title="Grace and Truth: A Collection of Poems"
+                  data-year="Kindle ebook"
+                  data-lang="English"
+                  data-desc="A collection of poems about grace and truth as steady companions through faith and life."
+                  data-buy="https://www.amazon.com/GRACE-TRUTH-COLLECTION-Mihaela-Hegstrom-ebook/dp/B0CTSCMQSW">
+            <img class="book__cover" src="images/grace-and-truth.jpg" alt="Grace and Truth: A Collection of Poems cover" loading="lazy" />
+            <span class="book__tag">Poetry</span>
+            <span class="book__title">Grace and Truth</span>
+            <span class="book__meta">English • Kindle</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <!-- Book 2 -->
+          <button class="book" role="listitem" type="button"
+                  data-title="The Mysteries of My Soul: A Collection of Poems"
+                  data-year="Kindle ebook"
+                  data-lang="English"
+                  data-desc="A reflective collection of poems centered on praise, prayer, and God’s guidance through daily life."
+                  data-buy="https://www.amazon.com/Mysteries-My-Soul-Collection-Poems-ebook/dp/B0D7WXFND2">
+            <img class="book__cover" src="images/the-mysteries-of-my-soul.jpg" alt="The Mysteries of My Soul: A Collection of Poems cover" loading="lazy" />
+            <span class="book__tag">Poetry</span>
+            <span class="book__title">The Mysteries of My Soul</span>
+            <span class="book__meta">English • Kindle</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <!-- Book 3 -->
+          <button class="book" role="listitem" type="button"
                   data-title="Praises in the Storm"
-                  data-year="2010 (Xlibris) • later editions"
+                  data-year="2010 • later editions"
                   data-lang="English"
                   data-desc="Poems written to encourage hope and peace through hardship, highlighting God’s guidance and love."
                   data-buy="https://www.amazon.com/dp/168256830X">
@@ -162,34 +190,6 @@
             <span class="book__tag">Poetry</span>
             <span class="book__title">Praises in the Storm</span>
             <span class="book__meta">English • 2010</span>
-            <span class="book__hint">Open details</span>
-          </button>
-
-          <!-- Book 2 -->
-          <button class="book" role="listitem" type="button"
-                  data-title="The Mysteries of My Soul"
-                  data-year="2013 • later editions"
-                  data-lang="English"
-                  data-desc="A collection centered on praise and prayer, emphasizing God’s love, guidance, and spiritual renewal."
-                  data-buy="https://www.amazon.com/dp/147978138X">
-            <img class="book__cover" src="images/the-mysteries-of-my-soul.jpg" alt="The Mysteries of My Soul cover" loading="lazy" />
-            <span class="book__tag">Poetry</span>
-            <span class="book__title">The Mysteries of My Soul</span>
-            <span class="book__meta">English • 2013</span>
-            <span class="book__hint">Open details</span>
-          </button>
-
-          <!-- Book 3 -->
-          <button class="book" role="listitem" type="button"
-                  data-title="Grace and Truth"
-                  data-year="2024"
-                  data-lang="English"
-                  data-desc="Poems reflecting on grace and truth as steady companions for daily life and enduring faith."
-                  data-buy="https://www.amazon.com/dp/B0CTSCMQSW">
-            <img class="book__cover" src="images/grace-and-truth.jpg" alt="Grace and Truth cover" loading="lazy" />
-            <span class="book__tag">Poetry</span>
-            <span class="book__title">Grace and Truth</span>
-            <span class="book__meta">English • 2024</span>
             <span class="book__hint">Open details</span>
           </button>
         </div>
@@ -210,46 +210,77 @@
           <p class="section__sub">Put your books on the screen — videos, readings, and features.</p>
         </div>
 
-        <div class="media">
-          <div class="card">
-            <h3>The Praises of My Soul</h3>
-            <p class="muted">Full album playlist.</p>
+        <div class="mediaBlocks">
+          <div class="mediaBlock">
+            <div class="mediaBlock__head">
+              <h3 class="mediaBlock__title">Albums</h3>
+              <p class="mediaBlock__sub muted">Two full-length playlists from Mihaela’s channel.</p>
+            </div>
 
-            <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">
-              <img src="images/thumbnailpraises.png" alt="The Praises of My Soul album cover" loading="lazy" />
-              <span class="mediaThumb__play" aria-hidden="true">▶</span>
-            </a>
+            <div class="mediaGrid">
+              <div class="card">
+                <h4 class="mediaCard__title">The Praises of My Soul</h4>
+                <p class="muted">Full album playlist.</p>
 
-            <div class="actions">
-              <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">Open playlist</a>
+                <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">
+                  <img src="images/thumbnailpraises.png" alt="The Praises of My Soul album cover" loading="lazy" />
+                  <span class="mediaThumb__play" aria-hidden="true">▶</span>
+                </a>
+
+                <div class="actions">
+                  <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">Open playlist</a>
+                </div>
+              </div>
+
+              <div class="card">
+                <h4 class="mediaCard__title">Grace &amp; Truth</h4>
+                <p class="muted">Full album playlist.</p>
+
+                <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">
+                  <img src="images/thumbnailgrace.png" alt="Grace & Truth album cover" loading="lazy" />
+                  <span class="mediaThumb__play" aria-hidden="true">▶</span>
+                </a>
+
+                <div class="actions">
+                  <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">Open playlist</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <h3>Grace &amp; Truth</h3>
-            <p class="muted">Full album playlist.</p>
+          <div class="mediaBlock">
+            <div class="mediaBlock__head">
+              <h3 class="mediaBlock__title">Book Trailer</h3>
+              <p class="mediaBlock__sub muted">Trailer coming soon. Share a YouTube link when it’s ready.</p>
+            </div>
 
-            <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">
-              <img src="images/thumbnailgrace.png" alt="Grace & Truth album cover" loading="lazy" />
-              <span class="mediaThumb__play" aria-hidden="true">▶</span>
-            </a>
-
-            <div class="actions">
-              <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">Open playlist</a>
+            <div class="mediaGrid mediaGrid--single">
+              <div class="card trailerCard">
+                <div class="trailerCard__panel">
+                  <span class="trailerCard__label">Coming soon</span>
+                  <p class="trailerCard__title">Feature trailer spot</p>
+                  <p class="muted">We can embed the trailer here or add a thumbnail with a play button.</p>
+                </div>
+                <div class="actions">
+                  <a class="btn btn--soft" href="mailto:mihaelahegstrom720@gmail.com?subject=Book%20Trailer%20Link">Send trailer link</a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="card media__press">
-            <h3>Press / Features</h3>
-            <p class="muted">
-              Add interviews, readings, podcasts, or articles here. Keep it short; link out for details.
-            </p>
+          <div class="mediaBlock">
+            <div class="mediaBlock__head">
+              <h3 class="mediaBlock__title">Press / Features</h3>
+              <p class="mediaBlock__sub muted">Add interviews, readings, podcasts, or articles here.</p>
+            </div>
 
-            <ul class="bullets">
-              <li><span class="dot" aria-hidden="true"></span>Readings and reflections</li>
-              <li><span class="dot" aria-hidden="true"></span>Short excerpts</li>
-              <li><span class="dot" aria-hidden="true"></span>Announcements</li>
-            </ul>
+            <div class="card">
+              <ul class="bullets">
+                <li><span class="dot" aria-hidden="true"></span>Readings and reflections</li>
+                <li><span class="dot" aria-hidden="true"></span>Short excerpts</li>
+                <li><span class="dot" aria-hidden="true"></span>Announcements</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

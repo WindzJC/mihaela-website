@@ -323,7 +323,7 @@ h2{
 
 .grid{
   display:grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap:18px;
 }
 .book{
@@ -340,14 +340,15 @@ h2{
 .book__cover{
   width:100%;
   height:auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
   border-radius:16px;
   border:1px solid var(--line);
   background:var(--card2);
   display:block;
   margin-bottom:12px;
   box-shadow: 0 10px 30px rgba(28,20,14,.08);
+  padding:6px;
 }
 .book:hover{
   transform: translateY(-3px);
@@ -392,14 +393,65 @@ h2{
   color:var(--muted);
 }
 
-.media{
+.mediaBlocks{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  gap:32px;
+}
+.mediaBlock__head{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:14px;
+  flex-wrap:wrap;
+}
+.mediaBlock__title{
+  margin:0;
+  font-family: "Yrsa", serif;
+  font-size: 26px;
+}
+.mediaBlock__sub{
+  margin:0;
+  max-width: 60ch;
+}
+.mediaGrid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap:18px;
   align-items:start;
 }
-.media__press{
-  grid-column: 1 / -1;
+.mediaGrid--single{
+  grid-template-columns: minmax(0, 1fr);
+}
+.mediaCard__title{
+  margin:0 0 6px;
+  font-family: "Yrsa", serif;
+  font-size: 22px;
+}
+.trailerCard{
+  display:grid;
+  gap:12px;
+}
+.trailerCard__panel{
+  padding:16px;
+  border-radius:16px;
+  border:1px dashed color-mix(in oklab, var(--accent2) 35%, var(--line));
+  background: color-mix(in oklab, var(--card2) 65%, transparent);
+}
+.trailerCard__label{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:var(--accent2);
+  font-weight:600;
+}
+.trailerCard__title{
+  margin:8px 0 6px;
+  font-family: "Yrsa", serif;
+  font-size: 20px;
 }
 .video{
   margin-top:12px;
@@ -547,7 +599,8 @@ h2{
 /* Responsive */
 @media (max-width: 920px){
   .hero__grid{grid-template-columns: 1fr; }
-  .about, .media, .contact{grid-template-columns: 1fr}
+  .about, .contact{grid-template-columns: 1fr}
+  .mediaGrid{grid-template-columns: 1fr}
   .grid{grid-template-columns: repeat(2, 1fr)}
   .hero{padding-top:54px}
 }
