@@ -1,0 +1,1021 @@
+MIHAELA HEGSTROM — SIMPLE SITE (3 files)
+================================================
+
+[1] index.html
+------------------------------------------------
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Mihaela S. Hegstrom — Christian poet and author. Books, biography, media, and contact." />
+  <meta name="theme-color" content="#0b1020" />
+  <title>Mihaela S. Hegstrom — Author</title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mihaela S. Hegstrom — Author" />
+  <meta property="og:description" content="Books, biography, media, and contact." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar" data-elevate>
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Mihaela S. Hegstrom</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navlinks">
+          <span class="nav__toggleBars" aria-hidden="true"></span>
+          <span class="sr">Menu</span>
+        </button>
+
+        <div id="navlinks" class="nav__links">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#books">Books</a>
+          <a class="nav__link" href="#media">Media</a>
+          <a class="nav__link" href="#contact">Contact</a>
+          <button class="chip chip--ghost" type="button" id="themeBtn" aria-label="Toggle theme">
+            <span class="chip__dot" aria-hidden="true"></span>
+            <span id="themeLabel">Dark</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker">Christian poet • Author</p>
+          <h1>Poetry for storms, silence, and grace.</h1>
+          <p class="lede">
+            A simple home for Mihaela’s books, biography, and media — built for readers who want clarity, not clutter.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#books">Explore books</a>
+            <a class="btn btn--soft" href="#contact">Get in touch</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta">
+              <span class="meta__label">Based near</span>
+              <span class="meta__value">Chicago area</span>
+            </div>
+            <div class="meta">
+              <span class="meta__label">Focus</span>
+              <span class="meta__value">Faith • Prayer • Encouragement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card" role="img" aria-label="Minimal abstract book cover illustration">
+          <div class="cardArt">
+            <div class="cardArt__ring"></div>
+            <div class="cardArt__ring cardArt__ring--2"></div>
+            <div class="cardArt__book">
+              <div class="cardArt__spine"></div>
+              <div class="cardArt__pages"></div>
+            </div>
+            <div class="cardArt__quote">
+              <p>“Grace and truth<br/>do not compete.”</p>
+              <span>— poems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>About</h2>
+          <p class="section__sub">
+            Romania-born poet and author whose work centers on faith, prayer, and hope through life’s trials.
+          </p>
+        </div>
+
+        <div class="about">
+          <div class="about__panel">
+            <h3>Short bio</h3>
+            <p>
+              Mihaela S. Hegstrom is a Romania-born Christian poet and author whose writing invites readers to reflect
+              on God’s guidance through seasons of hardship and renewal. Trained in engineering and education, she moved
+              with her family to the Chicago area in 1979. Her poetry collections explore praise, prayer, grace, and truth
+              with a steady voice meant to encourage.
+            </p>
+
+            <div class="pillrow" aria-label="Highlights">
+              <span class="pill">Poetry collections</span>
+              <span class="pill">Romanian & English editions</span>
+              <span class="pill">Faith-centered themes</span>
+            </div>
+          </div>
+
+          <aside class="about__aside" aria-label="Quick links">
+            <div class="card">
+              <h3>Official links</h3>
+              <ul class="links">
+                <li><a href="https://mihaelahegstrombooks.com/" target="_blank" rel="noopener">Official website</a></li>
+                <li><a href="https://www.goodreads.com/author/list/6935530.Mihaela_S_Hegstrom" target="_blank" rel="noopener">Goodreads</a></li>
+                <li><a href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">YouTube</a></li>
+                <li><a href="https://www.linkedin.com/in/mihaela-hegstrom-3352b3a3" target="_blank" rel="noopener">LinkedIn</a></li>
+              </ul>
+            </div>
+
+            <div class="card card--note">
+              <h3>Note</h3>
+              <p class="muted">
+                Text on this site is intentionally concise and paraphrased. Replace anything with the author’s preferred wording.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKS -->
+    <section id="books" class="section section--alt">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Books</h2>
+          <p class="section__sub">A few core collections, presented cleanly. Click a book for details.</p>
+        </div>
+
+        <div class="grid" role="list">
+          <!-- Book 1 -->
+          <button class="book" role="listitem" type="button"
+                  data-title="Praises in the Storm"
+                  data-year="2010 (Xlibris) • later editions"
+                  data-lang="English"
+                  data-desc="Poems written to encourage hope and peace through hardship, highlighting God’s guidance and love."
+                  data-buy="https://mihaelahegstrombooks.com/">
+            <span class="book__tag">Poetry</span>
+            <span class="book__title">Praises in the Storm</span>
+            <span class="book__meta">English • 2010</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <!-- Book 2 -->
+          <button class="book" role="listitem" type="button"
+                  data-title="The Mysteries of My Soul"
+                  data-year="2013 • later editions"
+                  data-lang="English"
+                  data-desc="A collection centered on praise and prayer, emphasizing God’s love, guidance, and spiritual renewal."
+                  data-buy="https://mihaelahegstrombooks.com/">
+            <span class="book__tag">Poetry</span>
+            <span class="book__title">The Mysteries of My Soul</span>
+            <span class="book__meta">English • 2013</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <!-- Book 3 -->
+          <button class="book" role="listitem" type="button"
+                  data-title="Grace and Truth"
+                  data-year="2024"
+                  data-lang="English"
+                  data-desc="Poems reflecting on grace and truth as steady companions for daily life and enduring faith."
+                  data-buy="https://mihaelahegstrombooks.com/">
+            <span class="book__tag">Poetry</span>
+            <span class="book__title">Grace and Truth</span>
+            <span class="book__meta">English • 2024</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <!-- Romanian -->
+          <button class="book" role="listitem" type="button"
+                  data-title="Har și adevăr"
+                  data-year="Romanian edition"
+                  data-lang="Romanian"
+                  data-desc="Romanian-language edition. See official listings for formats and ISBN details."
+                  data-buy="https://mihaelahegstrombooks.com/">
+            <span class="book__tag">Română</span>
+            <span class="book__title">Har și adevăr</span>
+            <span class="book__meta">Romanian</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <button class="book" role="listitem" type="button"
+                  data-title="Laude în furtună"
+                  data-year="Romanian edition"
+                  data-lang="Romanian"
+                  data-desc="Romanian-language edition related to the English title “Praises in the Storm.”"
+                  data-buy="https://mihaelahegstrombooks.com/">
+            <span class="book__tag">Română</span>
+            <span class="book__title">Laude în furtună</span>
+            <span class="book__meta">Romanian</span>
+            <span class="book__hint">Open details</span>
+          </button>
+
+          <button class="book" role="listitem" type="button"
+                  data-title="Tainele sufletului meu"
+                  data-year="Romanian edition"
+                  data-lang="Romanian"
+                  data-desc="Romanian-language edition related to the English title “The Mysteries of My Soul.”"
+                  data-buy="https://mihaelahegstrombooks.com/">
+            <span class="book__tag">Română</span>
+            <span class="book__title">Tainele sufletului meu</span>
+            <span class="book__meta">Romanian</span>
+            <span class="book__hint">Open details</span>
+          </button>
+        </div>
+
+        <div class="noteRow">
+          <div class="note">
+            <strong>Tip:</strong> Replace the “Buy / Learn more” links per book with Amazon/Publisher pages if preferred.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section id="media" class="section">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Media</h2>
+          <p class="section__sub">A simple embed plus quick links.</p>
+        </div>
+
+        <div class="media">
+          <div class="card">
+            <h3>Latest on YouTube</h3>
+            <p class="muted">Paste a specific video URL in the embed if you want a featured video.</p>
+
+            <!-- Replace VIDEO_ID with any YouTube video id -->
+            <div class="video">
+              <iframe
+                title="YouTube video"
+                src="https://www.youtube.com/embed?listType=user_uploads&list=mihaelahegstrom2740"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+
+            <div class="actions">
+              <a class="btn btn--soft" href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">Open channel</a>
+              <a class="btn btn--soft" href="https://mihaelahegstrombooks.com/" target="_blank" rel="noopener">Official site</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Press / Features</h3>
+            <p class="muted">
+              Add interviews, readings, podcasts, or articles here. Keep it short; link out for details.
+            </p>
+
+            <ul class="bullets">
+              <li><span class="dot" aria-hidden="true"></span>Readings and reflections</li>
+              <li><span class="dot" aria-hidden="true"></span>Short excerpts</li>
+              <li><span class="dot" aria-hidden="true"></span>Announcements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="wrap">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="section__sub">Client-side form (no backend). It copies a ready-to-send message.</p>
+        </div>
+
+        <div class="contact">
+          <div class="card">
+            <h3>Send a message</h3>
+            <form id="contactForm" class="form" autocomplete="on">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message…" required></textarea>
+              </div>
+
+              <div class="actions">
+                <button class="btn" type="submit">Copy message</button>
+                <button class="btn btn--soft" type="button" id="clearBtn">Clear</button>
+              </div>
+
+              <p class="muted small" id="formHint">
+                Update the email address below to the author’s preferred contact.
+              </p>
+            </form>
+          </div>
+
+          <aside class="card card--note">
+            <h3>Direct</h3>
+            <p class="muted">
+              Email: <button class="linkLike" type="button" id="copyEmailBtn" data-email="CHANGE-ME@example.com">CHANGE-ME@example.com</button>
+            </p>
+
+            <div class="divider"></div>
+
+            <h3>Social</h3>
+            <ul class="links">
+              <li><a href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a href="https://www.goodreads.com/author/list/6935530.Mihaela_S_Hegstrom" target="_blank" rel="noopener">Goodreads</a></li>
+              <li><a href="https://www.linkedin.com/in/mihaela-hegstrom-3352b3a3" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p class="muted small">© <span id="year"></span> Mihaela S. Hegstrom</p>
+        <p class="muted small">Built simple. Replace placeholders as needed.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- BOOK MODAL -->
+  <dialog class="modal" id="bookModal" aria-label="Book details">
+    <form method="dialog" class="modal__panel">
+      <div class="modal__top">
+        <div>
+          <p class="kicker" id="mLang">Poetry</p>
+          <h3 id="mTitle">Book Title</h3>
+          <p class="muted" id="mMeta">Year</p>
+        </div>
+        <button class="iconBtn" value="cancel" aria-label="Close dialog">✕</button>
+      </div>
+
+      <p id="mDesc" class="modal__desc"></p>
+
+      <div class="modal__actions">
+        <a class="btn" id="mBuy" href="#" target="_blank" rel="noopener">Buy / Learn more</a>
+        <button class="btn btn--soft" value="cancel" type="submit">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
+
+
+[2] styles.css
+------------------------------------------------
+/* Minimal, unique, “less is more” theme */
+:root{
+  --bg: #0b1020;
+  --bg2:#0e1630;
+  --card: rgba(255,255,255,.06);
+  --card2: rgba(255,255,255,.08);
+  --line: rgba(255,255,255,.12);
+  --text: #eaf0ff;
+  --muted:#a9b4d6;
+  --accent:#7cdbff;
+  --accent2:#a78bfa;
+  --shadow: 0 18px 60px rgba(0,0,0,.45);
+  --radius: 18px;
+  --wrap: 1100px;
+}
+
+[data-theme="light"]{
+  --bg:#fbfcff;
+  --bg2:#f3f6ff;
+  --card: rgba(10,20,40,.05);
+  --card2: rgba(10,20,40,.08);
+  --line: rgba(10,20,40,.12);
+  --text:#0c1222;
+  --muted:#4b5977;
+  --shadow: 0 18px 60px rgba(10,20,40,.12);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 800px at 20% -10%, rgba(124,219,255,.18), transparent 55%),
+    radial-gradient(900px 700px at 100% 0%, rgba(167,139,250,.16), transparent 55%),
+    linear-gradient(180deg, var(--bg), var(--bg2));
+  color:var(--text);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height:1.55;
+}
+
+a{color:inherit}
+.wrap{max-width:var(--wrap); margin:0 auto; padding:0 20px}
+.sr{position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0)}
+.skip{
+  position:absolute; left:-999px; top:10px;
+  padding:10px 12px; border-radius:12px;
+  background:var(--card2); border:1px solid var(--line);
+}
+.skip:focus{left:10px; z-index:9999}
+
+.topbar{
+  position:sticky; top:0; z-index:50;
+  backdrop-filter: blur(10px);
+  background: color-mix(in oklab, var(--bg) 70%, transparent);
+  border-bottom:1px solid transparent;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.topbar.is-elevated{
+  border-bottom-color:var(--line);
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+}
+.topbar__inner{
+  display:flex; align-items:center; justify-content:space-between;
+  height:66px;
+}
+
+.brand{
+  display:flex; align-items:center; gap:10px;
+  text-decoration:none; font-weight:600;
+}
+.brand__mark{
+  width:14px; height:14px; border-radius:6px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  box-shadow: 0 0 0 6px color-mix(in oklab, var(--accent) 20%, transparent);
+}
+.brand__text{font-size:14px; letter-spacing:.2px}
+
+.nav{display:flex; align-items:center; gap:12px}
+.nav__toggle{
+  display:none;
+  background:transparent; border:1px solid var(--line);
+  border-radius:14px; padding:10px 10px;
+  color:var(--text);
+}
+.nav__toggleBars{
+  display:block; width:18px; height:12px; position:relative;
+}
+.nav__toggleBars::before,
+.nav__toggleBars::after{
+  content:""; position:absolute; left:0; right:0; height:2px;
+  background:var(--text); border-radius:2px;
+}
+.nav__toggleBars::before{top:0}
+.nav__toggleBars::after{bottom:0}
+
+.nav__links{display:flex; align-items:center; gap:12px}
+.nav__link{
+  text-decoration:none;
+  color:var(--muted);
+  padding:8px 10px;
+  border-radius:12px;
+  transition: background .15s ease, color .15s ease;
+}
+.nav__link:hover{background:var(--card); color:var(--text)}
+.nav__link.is-active{background:var(--card2); color:var(--text)}
+
+.chip{
+  display:inline-flex; align-items:center; gap:8px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  padding:8px 12px;
+  font-weight:600;
+  background:var(--card);
+  cursor:pointer;
+}
+.chip--ghost{background:transparent}
+.chip__dot{
+  width:10px; height:10px; border-radius:999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+}
+
+.hero{padding:72px 0 28px}
+.hero__grid{
+  display:grid; grid-template-columns: 1.1fr .9fr; gap:28px;
+  align-items:stretch;
+}
+.kicker{
+  margin:0 0 10px;
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+h1{
+  font-family: Fraunces, serif;
+  font-weight:700;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height:1.05;
+  margin:0 0 12px;
+}
+.lede{
+  font-size:16px;
+  color:var(--muted);
+  max-width:54ch;
+  margin:0 0 18px;
+}
+.hero__cta{display:flex; gap:10px; flex-wrap:wrap}
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent) 70%, transparent), color-mix(in oklab, var(--accent2) 55%, transparent));
+  color:var(--text);
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+}
+.btn--soft{
+  background:var(--card);
+}
+.btn:active{transform: translateY(1px)}
+
+.hero__meta{
+  display:flex; gap:12px; flex-wrap:wrap;
+  margin-top:20px;
+}
+.meta{
+  padding:10px 12px;
+  border-radius:var(--radius);
+  border:1px solid var(--line);
+  background:var(--card);
+  min-width: 220px;
+}
+.meta__label{display:block; font-size:12px; color:var(--muted)}
+.meta__value{display:block; font-weight:600}
+
+.hero__card{
+  border-radius: calc(var(--radius) + 6px);
+  border:1px solid var(--line);
+  background: linear-gradient(180deg, var(--card), transparent);
+  box-shadow: var(--shadow);
+  overflow:hidden;
+  position:relative;
+}
+.cardArt{
+  height:100%;
+  min-height: 360px;
+  position:relative;
+  padding:18px;
+}
+.cardArt__ring{
+  position:absolute; inset:auto auto -40px -80px;
+  width:260px; height:260px; border-radius:50%;
+  border:1px solid color-mix(in oklab, var(--accent) 55%, transparent);
+  box-shadow: inset 0 0 0 18px color-mix(in oklab, var(--accent) 8%, transparent);
+}
+.cardArt__ring--2{
+  inset:-70px -90px auto auto;
+  border-color: color-mix(in oklab, var(--accent2) 55%, transparent);
+  box-shadow: inset 0 0 0 18px color-mix(in oklab, var(--accent2) 8%, transparent);
+}
+.cardArt__book{
+  position:absolute; left:22px; bottom:22px;
+  width:170px; height:210px;
+  border-radius:18px;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--accent) 30%, var(--card2)), var(--card));
+  border:1px solid var(--line);
+  transform: rotate(-6deg);
+}
+.cardArt__spine{
+  position:absolute; left:0; top:0; bottom:0; width:36px;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--accent2) 30%, transparent), transparent);
+  border-right:1px solid var(--line);
+  border-radius:18px 0 0 18px;
+}
+.cardArt__pages{
+  position:absolute; right:10px; top:12px; bottom:12px; width:18px;
+  background: rgba(255,255,255,.12);
+  border-radius:12px;
+}
+.cardArt__quote{
+  position:absolute; right:18px; bottom:18px;
+  padding:14px 14px 12px;
+  border-radius:18px;
+  background:var(--card);
+  border:1px solid var(--line);
+  max-width: 210px;
+}
+.cardArt__quote p{margin:0; font-family: Fraunces, serif; font-weight:700; line-height:1.1}
+.cardArt__quote span{display:block; margin-top:8px; color:var(--muted); font-size:12px}
+
+.section{padding:64px 0}
+.section--alt{
+  background: linear-gradient(180deg, transparent, color-mix(in oklab, var(--bg2) 30%, transparent), transparent);
+}
+.section__head{margin-bottom:22px}
+h2{
+  margin:0 0 10px;
+  font-family: Fraunces, serif;
+  font-size: 34px;
+  line-height:1.1;
+}
+.section__sub{margin:0; color:var(--muted); max-width: 70ch}
+
+.about{
+  display:grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap:18px;
+  align-items:start;
+}
+.about__panel{
+  padding:18px;
+  border-radius: calc(var(--radius) + 6px);
+  border:1px solid var(--line);
+  background: var(--card);
+}
+.about__panel h3{margin:0 0 10px}
+.about__panel p{margin:0; color:var(--muted)}
+.pillrow{display:flex; gap:8px; flex-wrap:wrap; margin-top:14px}
+.pill{
+  padding:7px 10px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background: color-mix(in oklab, var(--card2) 55%, transparent);
+  font-size:12px;
+}
+
+.card{
+  padding:18px;
+  border-radius: calc(var(--radius) + 6px);
+  border:1px solid var(--line);
+  background: var(--card);
+}
+.card--note{background: color-mix(in oklab, var(--card2) 60%, transparent)}
+.card h3{margin:0 0 10px}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+
+.links{list-style:none; margin:0; padding:0; display:grid; gap:8px}
+.links a{
+  text-decoration:none;
+  color:var(--text);
+  padding:8px 10px;
+  border-radius:12px;
+  border:1px solid transparent;
+}
+.links a:hover{border-color:var(--line); background:var(--card2)}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:14px;
+}
+.book{
+  text-align:left;
+  padding:16px;
+  border-radius: calc(var(--radius) + 6px);
+  border:1px solid var(--line);
+  background: linear-gradient(180deg, var(--card), transparent);
+  box-shadow: none;
+  cursor:pointer;
+  color:var(--text);
+  transition: transform .12s ease, background .12s ease;
+}
+.book:hover{
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, var(--card2), transparent);
+}
+.book__tag{
+  display:inline-flex;
+  font-size:12px;
+  color:var(--muted);
+  border:1px solid var(--line);
+  padding:6px 10px;
+  border-radius:999px;
+  background: color-mix(in oklab, var(--card2) 55%, transparent);
+}
+.book__title{
+  display:block;
+  margin-top:12px;
+  font-family: Fraunces, serif;
+  font-size: 20px;
+  font-weight:700;
+}
+.book__meta{
+  display:block;
+  margin-top:8px;
+  color:var(--muted);
+  font-size:13px;
+}
+.book__hint{
+  display:block;
+  margin-top:14px;
+  font-size:12px;
+  color:var(--muted);
+  opacity:.9;
+}
+
+.noteRow{margin-top:14px}
+.note{
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--muted);
+}
+
+.media{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+  align-items:start;
+}
+.video{
+  margin-top:12px;
+  border-radius: 18px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+.video iframe{width:100%; height:100%; border:0}
+.actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+
+.bullets{list-style:none; padding:0; margin:0; display:grid; gap:10px}
+.dot{
+  display:inline-block; width:9px; height:9px; border-radius:999px;
+  margin-right:10px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+}
+
+.contact{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap:18px;
+  align-items:start;
+}
+.form{display:grid; gap:12px}
+.field label{display:block; font-weight:600; margin:0 0 6px}
+.field input,
+.field textarea{
+  width:100%;
+  padding:11px 12px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background: color-mix(in oklab, var(--bg) 70%, transparent);
+  color:var(--text);
+  outline:none;
+}
+.field input:focus,
+.field textarea:focus{
+  border-color: color-mix(in oklab, var(--accent) 55%, var(--line));
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--accent) 16%, transparent);
+}
+.linkLike{
+  padding:0; border:0; background:transparent;
+  color:var(--text); text-decoration:underline;
+  cursor:pointer; font:inherit;
+}
+.divider{height:1px; background:var(--line); margin:14px 0}
+
+.footer{padding:26px 0 40px; border-top:1px solid var(--line)}
+.footer__inner{display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap}
+
+/* Modal */
+.modal{
+  border:0;
+  padding:0;
+  width:min(620px, calc(100% - 24px));
+  border-radius: 22px;
+  background: transparent;
+}
+.modal::backdrop{
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(6px);
+}
+.modal__panel{
+  margin:0;
+  border-radius: 22px;
+  border:1px solid var(--line);
+  background: linear-gradient(180deg, var(--bg2), var(--bg));
+  box-shadow: var(--shadow);
+  padding:18px;
+}
+.modal__top{
+  display:flex; justify-content:space-between; gap:12px; align-items:flex-start;
+}
+.modal__desc{color:var(--muted)}
+.modal__actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+.iconBtn{
+  width:40px; height:40px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:var(--card);
+  color:var(--text);
+  cursor:pointer;
+}
+.iconBtn:active{transform: translateY(1px)}
+
+/* Toast */
+.toast{
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  padding:10px 12px;
+  border-radius: 999px;
+  border:1px solid var(--line);
+  background: color-mix(in oklab, var(--bg) 70%, transparent);
+  color:var(--text);
+  box-shadow: var(--shadow);
+  opacity:0;
+  pointer-events:none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+.toast.is-on{
+  opacity:1;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+/* Responsive */
+@media (max-width: 920px){
+  .hero__grid{grid-template-columns: 1fr; }
+  .about, .media, .contact{grid-template-columns: 1fr}
+  .grid{grid-template-columns: repeat(2, 1fr)}
+  .hero{padding-top:54px}
+}
+@media (max-width: 620px){
+  .grid{grid-template-columns: 1fr}
+  .nav__toggle{display:inline-flex}
+  .nav__links{
+    position:absolute;
+    right:20px;
+    top:64px;
+    display:none;
+    flex-direction:column;
+    align-items:stretch;
+    gap:8px;
+    padding:12px;
+    width: min(240px, calc(100vw - 40px));
+    border-radius:18px;
+    border:1px solid var(--line);
+    background: color-mix(in oklab, var(--bg) 70%, transparent);
+    box-shadow: var(--shadow);
+  }
+  .nav__links.is-open{display:flex}
+  .nav__link{padding:10px 12px}
+}
+
+
+[3] script.js
+------------------------------------------------
+/* Minimal JS: mobile menu, active links, theme toggle, book modal, copy helpers */
+const $ = (sel, root=document) => root.querySelector(sel);
+const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+
+const topbar = document.querySelector("[data-elevate]");
+const navToggle = $(".nav__toggle");
+const navLinks = $("#navlinks");
+const themeBtn = $("#themeBtn");
+const themeLabel = $("#themeLabel");
+
+const toast = $("#toast");
+function showToast(msg){
+  toast.textContent = msg;
+  toast.classList.add("is-on");
+  window.clearTimeout(showToast._t);
+  showToast._t = window.setTimeout(() => toast.classList.remove("is-on"), 1600);
+}
+
+// Elevation on scroll
+function onScroll(){
+  if (window.scrollY > 6) topbar.classList.add("is-elevated");
+  else topbar.classList.remove("is-elevated");
+}
+window.addEventListener("scroll", onScroll, {passive:true});
+onScroll();
+
+// Mobile nav
+navToggle?.addEventListener("click", () => {
+  const open = navLinks.classList.toggle("is-open");
+  navToggle.setAttribute("aria-expanded", String(open));
+});
+$$(".nav__link").forEach(a => a.addEventListener("click", () => {
+  navLinks.classList.remove("is-open");
+  navToggle?.setAttribute("aria-expanded", "false");
+}));
+
+// Active link highlight
+const sections = ["about","books","media","contact"].map(id => document.getElementById(id)).filter(Boolean);
+const navMap = new Map($$(".nav__link").map(a => [a.getAttribute("href")?.replace("#",""), a]));
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    navMap.forEach(a => a?.classList.remove("is-active"));
+    const link = navMap.get(e.target.id);
+    link?.classList.add("is-active");
+  });
+}, {rootMargin: "-35% 0px -55% 0px", threshold: 0.01});
+sections.forEach(s => io.observe(s));
+
+// Theme toggle (remembered)
+const storageKey = "mih_theme";
+function applyTheme(t){
+  document.documentElement.dataset.theme = t;
+  themeLabel.textContent = t === "light" ? "Light" : "Dark";
+}
+const saved = localStorage.getItem(storageKey);
+if (saved === "light" || saved === "dark") applyTheme(saved);
+themeBtn?.addEventListener("click", () => {
+  const current = document.documentElement.dataset.theme === "light" ? "light" : "dark";
+  const next = current === "light" ? "dark" : "light";
+  applyTheme(next);
+  localStorage.setItem(storageKey, next);
+});
+
+// Book modal
+const modal = $("#bookModal");
+const mTitle = $("#mTitle");
+const mMeta = $("#mMeta");
+const mLang = $("#mLang");
+const mDesc = $("#mDesc");
+const mBuy = $("#mBuy");
+
+function openBook(btn){
+  mTitle.textContent = btn.dataset.title || "Book";
+  mMeta.textContent = btn.dataset.year || "";
+  mLang.textContent = btn.dataset.lang || "Poetry";
+  mDesc.textContent = btn.dataset.desc || "";
+  const href = btn.dataset.buy || "#";
+  mBuy.setAttribute("href", href);
+
+  if (typeof modal.showModal === "function") modal.showModal();
+  else modal.setAttribute("open", "true");
+}
+
+$$(".book").forEach(btn => btn.addEventListener("click", () => openBook(btn)));
+
+// Contact form copy
+const form = $("#contactForm");
+const clearBtn = $("#clearBtn");
+const copyEmailBtn = $("#copyEmailBtn");
+
+async function copyText(text){
+  try{
+    await navigator.clipboard.writeText(text);
+    return true;
+  }catch{
+    // fallback
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand("copy");
+    document.body.removeChild(ta);
+    return ok;
+  }
+}
+
+form?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const name = $("#name").value.trim();
+  const email = $("#email").value.trim();
+  const message = $("#message").value.trim();
+
+  const compiled =
+`Hello Mihaela,
+
+${message}
+
+— ${name}
+${email}`.trim();
+
+  const ok = await copyText(compiled);
+  showToast(ok ? "Message copied" : "Copy failed");
+});
+
+clearBtn?.addEventListener("click", () => {
+  $("#name").value = "";
+  $("#email").value = "";
+  $("#message").value = "";
+  showToast("Cleared");
+});
+
+copyEmailBtn?.addEventListener("click", async () => {
+  const em = copyEmailBtn.dataset.email || copyEmailBtn.textContent.trim();
+  const ok = await copyText(em);
+  showToast(ok ? "Email copied" : "Copy failed");
+});
+
+// Footer year
+$("#year").textContent = String(new Date().getFullYear());
+
