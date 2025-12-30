@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Mihaela S. Hegstrom — Christian poet and author. Books, biography, media, and contact." />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#f4efe7" />
   <title>Mihaela S. Hegstrom — Author</title>
 
   <!-- Open Graph -->
@@ -14,7 +14,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600&family=Yrsa:wght@500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
@@ -41,10 +41,6 @@
           <a class="nav__link" href="#books">Books</a>
           <a class="nav__link" href="#media">Media</a>
           <a class="nav__link" href="#contact">Contact</a>
-          <button class="chip chip--ghost" type="button" id="themeBtn" aria-label="Toggle theme">
-            <span class="chip__dot" aria-hidden="true"></span>
-            <span id="themeLabel">Dark</span>
-          </button>
         </div>
       </nav>
     </div>
@@ -123,10 +119,12 @@
           </div>
 
           <aside class="about__aside" aria-label="Quick links">
+            <div class="card about__portrait">
+              <img src="https://images.gr-assets.com/authors/1532496465p5/14886471.jpg" alt="Mihaela S. Hegstrom portrait" loading="lazy" />
+            </div>
             <div class="card">
               <h3>Official links</h3>
               <ul class="links">
-                <li><a href="https://mihaelahegstrombooks.com/" target="_blank" rel="noopener">Official website</a></li>
                 <li><a href="https://www.goodreads.com/author/list/6935530.Mihaela_S_Hegstrom" target="_blank" rel="noopener">Goodreads</a></li>
                 <li><a href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">YouTube</a></li>
                 <li><a href="https://www.linkedin.com/in/mihaela-hegstrom-3352b3a3" target="_blank" rel="noopener">LinkedIn</a></li>
@@ -209,31 +207,39 @@
       <div class="wrap">
         <div class="section__head">
           <h2>Media</h2>
-          <p class="section__sub">A simple embed plus quick links.</p>
+          <p class="section__sub">Put your books on the screen — videos, readings, and features.</p>
         </div>
 
         <div class="media">
           <div class="card">
-            <h3>Latest on YouTube</h3>
-            <p class="muted">Paste a specific video URL in the embed if you want a featured video.</p>
+            <h3>The Praises of My Soul</h3>
+            <p class="muted">Full album playlist.</p>
 
-            <!-- Replace VIDEO_ID with any YouTube video id -->
-            <div class="video">
-              <iframe
-                title="YouTube video"
-                src="https://www.youtube.com/embed?listType=user_uploads&list=mihaelahegstrom2740"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
+            <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">
+              <img src="images/thumbnailpraises.png" alt="The Praises of My Soul album cover" loading="lazy" />
+              <span class="mediaThumb__play" aria-hidden="true">▶</span>
+            </a>
 
             <div class="actions">
-              <a class="btn btn--soft" href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">Open channel</a>
-              <a class="btn btn--soft" href="https://mihaelahegstrombooks.com/" target="_blank" rel="noopener">Official site</a>
+              <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">Open playlist</a>
             </div>
           </div>
 
           <div class="card">
+            <h3>Grace &amp; Truth</h3>
+            <p class="muted">Full album playlist.</p>
+
+            <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">
+              <img src="images/thumbnailgrace.png" alt="Grace & Truth album cover" loading="lazy" />
+              <span class="mediaThumb__play" aria-hidden="true">▶</span>
+            </a>
+
+            <div class="actions">
+              <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">Open playlist</a>
+            </div>
+          </div>
+
+          <div class="card media__press">
             <h3>Press / Features</h3>
             <p class="muted">
               Add interviews, readings, podcasts, or articles here. Keep it short; link out for details.
@@ -282,7 +288,7 @@
               </div>
 
               <p class="muted small" id="formHint">
-                Update the email address below to the author’s preferred contact.
+                This form copies a ready-to-send message for the author.
               </p>
             </form>
           </div>
@@ -290,7 +296,7 @@
           <aside class="card card--note">
             <h3>Direct</h3>
             <p class="muted">
-              Email: <button class="linkLike" type="button" id="copyEmailBtn" data-email="CHANGE-ME@example.com">CHANGE-ME@example.com</button>
+              Email: <button class="linkLike" type="button" id="copyEmailBtn" data-email="mihaelahegstrom720@gmail.com">mihaelahegstrom720@gmail.com</button>
             </p>
 
             <div class="divider"></div>

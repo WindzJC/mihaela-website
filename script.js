@@ -5,8 +5,6 @@ const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
 const topbar = document.querySelector("[data-elevate]");
 const navToggle = $(".nav__toggle");
 const navLinks = $("#navlinks");
-const themeBtn = $("#themeBtn");
-const themeLabel = $("#themeLabel");
 
 const toast = $("#toast");
 function showToast(msg){
@@ -46,21 +44,6 @@ const io = new IntersectionObserver((entries) => {
   });
 }, {rootMargin: "-35% 0px -55% 0px", threshold: 0.01});
 sections.forEach(s => io.observe(s));
-
-// Theme toggle (remembered)
-const storageKey = "mih_theme";
-function applyTheme(t){
-  document.documentElement.dataset.theme = t;
-  themeLabel.textContent = t === "light" ? "Light" : "Dark";
-}
-const saved = localStorage.getItem(storageKey);
-if (saved === "light" || saved === "dark") applyTheme(saved);
-themeBtn?.addEventListener("click", () => {
-  const current = document.documentElement.dataset.theme === "light" ? "light" : "dark";
-  const next = current === "light" ? "dark" : "light";
-  applyTheme(next);
-  localStorage.setItem(storageKey, next);
-});
 
 // Book modal
 const modal = $("#bookModal");
