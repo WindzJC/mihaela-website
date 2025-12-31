@@ -23,26 +23,6 @@ $$('.nav__link').forEach(link => {
   });
 });
 
-const themeToggle = $("#themeToggle");
-const themeText = $("#themeText");
-const themeKey = "mih_theme";
-
-function applyTheme(mode){
-  if (mode === "light") document.documentElement.dataset.theme = "light";
-  else document.documentElement.removeAttribute("data-theme");
-  themeText.textContent = mode === "light" ? "Light" : "Dark";
-}
-
-const stored = localStorage.getItem(themeKey);
-if (stored === "light" || stored === "dark") applyTheme(stored);
-
-themeToggle?.addEventListener("click", () => {
-  const current = document.documentElement.dataset.theme === "light" ? "light" : "dark";
-  const next = current === "light" ? "dark" : "light";
-  applyTheme(next);
-  localStorage.setItem(themeKey, next);
-});
-
 const modal = $("#bookModal");
 const modalTitle = $("#modalTitle");
 const modalDesc = $("#modalDesc");

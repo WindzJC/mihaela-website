@@ -1,5 +1,4 @@
-:root{
-  color-scheme: dark;
+ :root{
   --bg: #0f1115;
   --bg2: #141821;
   --panel: #161b24;
@@ -12,20 +11,6 @@
   --shadow: 0 20px 60px rgba(6,8,12,0.5);
   --radius: 18px;
   --wrap: 1100px;
-}
-
-[data-theme="light"]{
-  color-scheme: light;
-  --bg: #f5f2ed;
-  --bg2: #ece6dd;
-  --panel: #ffffff;
-  --panel2: #f6f2ec;
-  --text: #181a20;
-  --muted: #5c6777;
-  --line: rgba(24,26,32,0.12);
-  --accent: #b36d4c;
-  --accent2: #4b6a78;
-  --shadow: 0 20px 60px rgba(40,34,28,0.18);
 }
 
 *{box-sizing:border-box}
@@ -139,24 +124,6 @@ a{color:inherit; text-decoration:none}
 }
 .nav__link:hover{color:var(--text); border-color:var(--accent)}
 
-.themeToggle{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  border-radius:999px;
-  border:1px solid var(--line);
-  background:transparent;
-  color:var(--text);
-  font-size:12px;
-  padding:6px 10px;
-  cursor:pointer;
-}
-.themeToggle__dot{
-  width:10px;
-  height:10px;
-  border-radius:999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent2));
-}
 
 .hero{padding:72px 0 40px}
 .hero__grid{
@@ -244,6 +211,12 @@ h1{
   background: linear-gradient(90deg, var(--accent), transparent);
 }
 .section__sub{margin:0; color:var(--muted); max-width:70ch}
+.sectionGuide{
+  margin:16px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  letter-spacing:0.02em;
+}
 
 .about{
   display:grid;
@@ -273,27 +246,40 @@ h1{
 .bookCard{
   border:1px solid var(--line);
   border-radius:var(--radius);
-  background: var(--panel);
-  overflow:hidden;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--panel2) 70%, transparent), var(--panel));
   text-align:left;
-  padding:0;
+  padding:16px;
   color:inherit;
   cursor:pointer;
+  display:grid;
+  gap:14px;
   transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .bookCard:hover{
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   border-color: color-mix(in oklab, var(--accent) 40%, var(--line));
-  box-shadow: 0 18px 40px rgba(0,0,0,0.25);
+  box-shadow: 0 20px 46px rgba(0,0,0,0.3);
 }
-.bookCard img{
-  width:100%;
-  aspect-ratio: 2 / 3;
-  object-fit: contain;
+.bookCard__cover{
+  border-radius:14px;
+  border:1px solid var(--line);
   background:var(--panel2);
-  padding:8px;
+  padding:12px;
+  height: clamp(220px, 30vw, 320px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
 }
-.bookCard__body{padding:16px}
+.bookCard__cover img{
+  width:auto;
+  height:100%;
+  max-width:100%;
+  object-fit: contain;
+  border-radius:10px;
+  background:var(--panel2);
+}
+.bookCard__body{padding:0}
 .bookCard__body h3{font-size:20px; margin-bottom:8px}
 .bookCard__body p{margin:0; color:var(--muted); font-size:14px}
 
@@ -393,6 +379,26 @@ h1{
   font:inherit;
 }
 
+.authorGuide{
+  display:grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap:20px;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--panel);
+  padding:20px;
+}
+.authorGuide h3{font-size:20px; margin-bottom:10px}
+.authorGuide ul{margin:0; padding-left:18px; color:var(--muted)}
+.authorGuide__note{
+  border-left:1px solid var(--line);
+  padding-left:20px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  justify-content:center;
+}
+
 .footer{
   border-top:1px solid var(--line);
   padding:24px 0 40px;
@@ -433,12 +439,14 @@ h1{
 }
 .modal__grid{
   display:grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap:20px;
   align-items:start;
 }
 .modal__grid img{
   width:100%;
+  max-height:70vh;
+  object-fit:contain;
   border-radius:12px;
   border:1px solid var(--line);
   background:var(--panel2);
@@ -467,6 +475,8 @@ h1{
   .hero__grid{grid-template-columns: 1fr}
   .about,
   .contact{grid-template-columns: 1fr}
+  .authorGuide{grid-template-columns: 1fr}
+  .authorGuide__note{border-left:0; padding-left:0}
   .modal__grid{grid-template-columns: 1fr}
 }
 
@@ -488,6 +498,5 @@ h1{
     box-shadow: var(--shadow);
   }
   .nav__links.is-open{display:flex}
-  .themeToggle{width:100%; justify-content:flex-start}
   .siteHeader__inner{height:64px}
 }
