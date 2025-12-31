@@ -3,376 +3,263 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Mihaela S. Hegstrom — Christian poet and author. Books, biography, media, and contact." />
-  <meta name="theme-color" content="#f4efe7" />
+  <meta name="description" content="Mihaela S. Hegstrom — Christian poet and author. Books, media, and contact." />
+  <meta name="theme-color" content="#0f1115" />
   <title>Mihaela S. Hegstrom — Author</title>
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Mihaela S. Hegstrom — Author" />
-  <meta property="og:description" content="Books, biography, media, and contact." />
+  <meta property="og:description" content="Christian poet and author. Books, media, and contact." />
   <meta property="og:type" content="website" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600&family=Yrsa:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
-
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="topbar" data-elevate>
-    <div class="wrap topbar__inner">
-      <a class="brand" href="#home" aria-label="Go to top">
+  <header class="siteHeader" data-header>
+    <div class="wrap siteHeader__inner">
+      <a class="brand" href="#top" aria-label="Mihaela S. Hegstrom home">
         <span class="brand__mark" aria-hidden="true"></span>
         <span class="brand__text">Mihaela S. Hegstrom</span>
       </a>
 
       <nav class="nav" aria-label="Primary">
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navlinks">
-          <span class="nav__toggleBars" aria-hidden="true"></span>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+          <span class="nav__bars" aria-hidden="true"></span>
           <span class="sr">Menu</span>
         </button>
-
-        <div id="navlinks" class="nav__links">
+        <div id="siteNav" class="nav__links">
           <a class="nav__link" href="#about">About</a>
           <a class="nav__link" href="#books">Books</a>
           <a class="nav__link" href="#media">Media</a>
           <a class="nav__link" href="#contact">Contact</a>
+          <button class="themeToggle" type="button" id="themeToggle" aria-label="Toggle light theme">
+            <span class="themeToggle__dot" aria-hidden="true"></span>
+            <span id="themeText">Dark</span>
+          </button>
         </div>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO -->
-    <section id="home" class="hero">
+    <section id="top" class="hero">
       <div class="wrap hero__grid">
         <div class="hero__copy">
           <p class="kicker">Christian poet • Author</p>
-          <h1>Poetry for storms, silence, and grace.</h1>
+          <h1>Mihaela S. Hegstrom</h1>
           <p class="lede">
-            A simple home for Mihaela’s books, biography, and media — built for readers who want clarity, not clutter.
+            Faith-rooted poetry and reflection that speaks to grace, prayer, and hope through life’s storms.
           </p>
-
-          <div class="hero__cta">
+          <p class="lede">
+            A calm, focused home for her latest collections, media, and contact.
+          </p>
+          <div class="hero__actions">
             <a class="btn" href="#books">Explore books</a>
-            <a class="btn btn--soft" href="#contact">Get in touch</a>
-          </div>
-
-          <div class="hero__meta">
-            <div class="meta">
-              <span class="meta__label">Based near</span>
-              <span class="meta__value">Chicago area</span>
-            </div>
-            <div class="meta">
-              <span class="meta__label">Focus</span>
-              <span class="meta__value">Faith • Prayer • Encouragement</span>
-            </div>
+            <a class="btn btn--ghost" href="#contact">Contact</a>
           </div>
         </div>
 
-        <div class="hero__card" role="img" aria-label="Minimal abstract book cover illustration">
-          <div class="cardArt">
-            <div class="cardArt__ring"></div>
-            <div class="cardArt__ring cardArt__ring--2"></div>
-            <div class="cardArt__book">
-              <div class="cardArt__spine"></div>
-              <div class="cardArt__pages"></div>
-            </div>
-            <div class="cardArt__quote">
-              <p>“Grace and truth<br/>do not compete.”</p>
-              <span>— poems</span>
-            </div>
+        <div class="hero__portrait">
+          <div class="portraitFrame">
+            <img src="assets/mihaela.jpg" alt="Portrait of Mihaela S. Hegstrom" width="480" height="600" loading="lazy" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="wrap">
         <div class="section__head">
           <h2>About</h2>
-          <p class="section__sub">
-            Romania-born poet and author whose work centers on faith, prayer, and hope through life’s trials.
-          </p>
+          <p class="section__sub">Romania-born Christian poet and author based near Chicago.</p>
         </div>
 
         <div class="about">
-          <div class="about__panel">
-            <h3>Short bio</h3>
-            <p>
-              Mihaela S. Hegstrom is a Romania-born Christian poet and author whose writing invites readers to reflect
-              on God’s guidance through seasons of hardship and renewal. Trained in engineering and education, she moved
-              with her family to the Chicago area in 1979. Her poetry collections explore praise, prayer, grace, and truth
-              with a steady voice meant to encourage.
-            </p>
+          <p class="about__text">
+            Mihaela S. Hegstrom writes poems shaped by faith, prayer, and resilience. Her collections invite readers into
+            stillness, gratitude, and the steady work of hope.
+          </p>
 
-            <div class="pillrow" aria-label="Highlights">
-              <span class="pill">Poetry collections</span>
-              <span class="pill">Romanian & English editions</span>
-              <span class="pill">Faith-centered themes</span>
-            </div>
+          <div class="about__links">
+            <a href="https://mihaelahegstrombooks.com/" target="_blank" rel="noopener">Official website</a>
+            <a href="https://www.goodreads.com/author/list/6935530.Mihaela_S_Hegstrom" target="_blank" rel="noopener">Goodreads</a>
+            <a href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.linkedin.com/in/mihaela-hegstrom-3352b3a3" target="_blank" rel="noopener">LinkedIn</a>
           </div>
-
-          <aside class="about__aside" aria-label="Quick links">
-            <div class="card about__portrait">
-              <img src="https://images.gr-assets.com/authors/1532496465p5/14886471.jpg" alt="Mihaela S. Hegstrom portrait" loading="lazy" />
-            </div>
-            <div class="card">
-              <h3>Official links</h3>
-              <ul class="links">
-                <li><a href="https://www.goodreads.com/author/list/6935530.Mihaela_S_Hegstrom" target="_blank" rel="noopener">Goodreads</a></li>
-                <li><a href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">YouTube</a></li>
-                <li><a href="https://www.linkedin.com/in/mihaela-hegstrom-3352b3a3" target="_blank" rel="noopener">LinkedIn</a></li>
-              </ul>
-            </div>
-
-            <div class="card card--note">
-              <h3>Note</h3>
-              <p class="muted">
-                Text on this site is intentionally concise and paraphrased. Replace anything with the author’s preferred wording.
-              </p>
-            </div>
-          </aside>
         </div>
       </div>
     </section>
 
-    <!-- BOOKS -->
     <section id="books" class="section section--alt">
       <div class="wrap">
         <div class="section__head">
           <h2>Books</h2>
-          <p class="section__sub">Selected collections, presented cleanly. Click a book for details.</p>
+          <p class="section__sub">Three collections, each centered on grace, prayer, and encouragement.</p>
         </div>
 
-        <div class="grid" role="list">
-          <!-- Book 1 -->
-          <button class="book" role="listitem" type="button"
-                  data-title="Grace and Truth: A Collection of Poems"
-                  data-year="Kindle ebook"
-                  data-lang="English"
-                  data-desc="A collection of poems about grace and truth as steady companions through faith and life."
-                  data-buy="https://www.amazon.com/GRACE-TRUTH-COLLECTION-Mihaela-Hegstrom-ebook/dp/B0CTSCMQSW">
-            <img class="book__cover" src="images/grace-and-truth.jpg" alt="Grace and Truth: A Collection of Poems cover" loading="lazy" />
-            <span class="book__tag">Poetry</span>
-            <span class="book__title">Grace and Truth</span>
-            <span class="book__meta">English • Kindle</span>
-            <span class="book__hint">Open details</span>
-          </button>
-
-          <!-- Book 2 -->
-          <button class="book" role="listitem" type="button"
-                  data-title="The Mysteries of My Soul: A Collection of Poems"
-                  data-year="Kindle ebook"
-                  data-lang="English"
-                  data-desc="A reflective collection of poems centered on praise, prayer, and God’s guidance through daily life."
-                  data-buy="https://www.amazon.com/Mysteries-My-Soul-Collection-Poems-ebook/dp/B0D7WXFND2">
-            <img class="book__cover" src="images/the-mysteries-of-my-soul.jpg" alt="The Mysteries of My Soul: A Collection of Poems cover" loading="lazy" />
-            <span class="book__tag">Poetry</span>
-            <span class="book__title">The Mysteries of My Soul</span>
-            <span class="book__meta">English • Kindle</span>
-            <span class="book__hint">Open details</span>
-          </button>
-
-          <!-- Book 3 -->
-          <button class="book" role="listitem" type="button"
+        <div class="bookGrid" role="list">
+          <button class="bookCard" type="button" role="listitem"
                   data-title="Praises in the Storm"
-                  data-year="2010 • later editions"
-                  data-lang="English"
                   data-desc="Poems written to encourage hope and peace through hardship, highlighting God’s guidance and love."
-                  data-buy="https://www.amazon.com/dp/168256830X">
-            <img class="book__cover" src="images/praises-in-the-storm.jpg" alt="Praises in the Storm cover" loading="lazy" />
-            <span class="book__tag">Poetry</span>
-            <span class="book__title">Praises in the Storm</span>
-            <span class="book__meta">English • 2010</span>
-            <span class="book__hint">Open details</span>
+                  data-img="assets/books/praises-in-the-storm.jpg"
+                  data-link="https://mihaelahegstrombooks.com/">
+            <img src="assets/books/praises-in-the-storm.jpg" alt="Praises in the Storm cover" width="640" height="960" loading="lazy" />
+            <div class="bookCard__body">
+              <h3>Praises in the Storm</h3>
+              <p>Encouragement and praise through hardship.</p>
+            </div>
           </button>
-        </div>
 
-        <div class="noteRow">
-          <div class="note">
-            <strong>Tip:</strong> Replace the “Buy / Learn more” links per book with Amazon/Publisher pages if preferred.
-          </div>
+          <button class="bookCard" type="button" role="listitem"
+                  data-title="The Mysteries of My Soul"
+                  data-desc="A collection centered on praise and prayer, emphasizing God’s love, guidance, and spiritual renewal."
+                  data-img="assets/books/the-mysteries-of-my-soul.jpg"
+                  data-link="https://mihaelahegstrombooks.com/">
+            <img src="assets/books/the-mysteries-of-my-soul.jpg" alt="The Mysteries of My Soul cover" width="640" height="960" loading="lazy" />
+            <div class="bookCard__body">
+              <h3>The Mysteries of My Soul</h3>
+              <p>Praise, prayer, and spiritual renewal.</p>
+            </div>
+          </button>
+
+          <button class="bookCard" type="button" role="listitem"
+                  data-title="Grace and Truth"
+                  data-desc="Poems reflecting on grace and truth as steady companions for daily life and enduring faith."
+                  data-img="assets/books/grace-and-truth.jpg"
+                  data-link="https://mihaelahegstrombooks.com/">
+            <img src="assets/books/grace-and-truth.jpg" alt="Grace and Truth cover" width="640" height="960" loading="lazy" />
+            <div class="bookCard__body">
+              <h3>Grace and Truth</h3>
+              <p>Daily faith, grace, and clarity.</p>
+            </div>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- MEDIA -->
     <section id="media" class="section">
       <div class="wrap">
         <div class="section__head">
           <h2>Media</h2>
-          <p class="section__sub">Put your books on the screen — videos, readings, and features.</p>
+          <p class="section__sub">Albums and upcoming video features.</p>
         </div>
 
         <div class="mediaBlocks">
           <div class="mediaBlock">
             <div class="mediaBlock__head">
-              <h3 class="mediaBlock__title">Albums</h3>
-              <p class="mediaBlock__sub muted">Two full-length playlists from Mihaela’s channel.</p>
+              <h3>Albums</h3>
+              <p class="muted">Full playlists on YouTube.</p>
             </div>
 
             <div class="mediaGrid">
-              <div class="card">
-                <h4 class="mediaCard__title">The Praises of My Soul</h4>
-                <p class="muted">Full album playlist.</p>
-
+              <article class="mediaItem">
                 <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">
-                  <img src="images/thumbnailpraises.png" alt="The Praises of My Soul album cover" loading="lazy" />
+                  <img src="assets/albums/thumbnailpraises.png" alt="The Praises of My Soul album cover" width="1054" height="1064" loading="lazy" />
                   <span class="mediaThumb__play" aria-hidden="true">▶</span>
                 </a>
-
-                <div class="actions">
-                  <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfq9rQPzIluUK0df0PpKCueN" target="_blank" rel="noopener">Open playlist</a>
+                <div class="mediaItem__body">
+                  <h4>The Praises of My Soul</h4>
+                  <p class="muted">Listen to the full album playlist.</p>
                 </div>
-              </div>
+              </article>
 
-              <div class="card">
-                <h4 class="mediaCard__title">Grace &amp; Truth</h4>
-                <p class="muted">Full album playlist.</p>
-
+              <article class="mediaItem">
                 <a class="mediaThumb" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">
-                  <img src="images/thumbnailgrace.png" alt="Grace & Truth album cover" loading="lazy" />
+                  <img src="assets/albums/thumbnailgrace.png" alt="Grace & Truth album cover" width="1068" height="1067" loading="lazy" />
                   <span class="mediaThumb__play" aria-hidden="true">▶</span>
                 </a>
-
-                <div class="actions">
-                  <a class="btn btn--soft" href="https://www.youtube.com/playlist?list=PLVEAjsSbXFfoxINJ7GKM0IgWryfNtBpPK" target="_blank" rel="noopener">Open playlist</a>
+                <div class="mediaItem__body">
+                  <h4>Grace &amp; Truth</h4>
+                  <p class="muted">Listen to the full album playlist.</p>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
 
           <div class="mediaBlock">
             <div class="mediaBlock__head">
-              <h3 class="mediaBlock__title">Book Trailer</h3>
-              <p class="mediaBlock__sub muted">Trailer coming soon. Share a YouTube link when it’s ready.</p>
+              <h3>Book Trailer</h3>
+              <p class="muted">Coming soon. We’ll feature it here.</p>
             </div>
 
-            <div class="mediaGrid mediaGrid--single">
-              <div class="card trailerCard">
-                <div class="trailerCard__panel">
-                  <span class="trailerCard__label">Coming soon</span>
-                  <p class="trailerCard__title">Feature trailer spot</p>
-                  <p class="muted">We can embed the trailer here or add a thumbnail with a play button.</p>
-                </div>
-                <div class="actions">
-                  <a class="btn btn--soft" href="mailto:mihaelahegstrom720@gmail.com?subject=Book%20Trailer%20Link">Send trailer link</a>
-                </div>
+            <div class="mediaTrailer">
+              <div>
+                <h4>Share a trailer link</h4>
+                <p class="muted">When it’s ready, we’ll embed the video and add a thumbnail.</p>
               </div>
-            </div>
-          </div>
-
-          <div class="mediaBlock">
-            <div class="mediaBlock__head">
-              <h3 class="mediaBlock__title">Press / Features</h3>
-              <p class="mediaBlock__sub muted">Add interviews, readings, podcasts, or articles here.</p>
-            </div>
-
-            <div class="card">
-              <ul class="bullets">
-                <li><span class="dot" aria-hidden="true"></span>Readings and reflections</li>
-                <li><span class="dot" aria-hidden="true"></span>Short excerpts</li>
-                <li><span class="dot" aria-hidden="true"></span>Announcements</li>
-              </ul>
+              <div class="mediaTrailer__actions">
+                <a class="btn btn--ghost" href="mailto:mihaelahegstrom720@gmail.com?subject=Book%20Trailer%20Link">Send trailer link</a>
+                <a class="btn" href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">Visit YouTube</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section section--alt">
       <div class="wrap">
         <div class="section__head">
           <h2>Contact</h2>
-          <p class="section__sub">Client-side form (no backend). It copies a ready-to-send message.</p>
+          <p class="section__sub">Client-side form. It copies a ready-to-send message.</p>
         </div>
 
         <div class="contact">
-          <div class="card">
-            <h3>Send a message</h3>
-            <form id="contactForm" class="form" autocomplete="on">
-              <div class="field">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required />
-              </div>
+          <form id="contactForm" class="contact__form" autocomplete="on">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <div class="actions">
+              <button class="btn" type="submit">Copy message</button>
+              <button class="btn btn--ghost" type="button" id="clearForm">Clear</button>
+            </div>
+          </form>
 
-              <div class="field">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="you@example.com" required />
-              </div>
-
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message…" required></textarea>
-              </div>
-
-              <div class="actions">
-                <button class="btn" type="submit">Copy message</button>
-                <button class="btn btn--soft" type="button" id="clearBtn">Clear</button>
-              </div>
-
-              <p class="muted small" id="formHint">
-                This form copies a ready-to-send message for the author.
-              </p>
-            </form>
-          </div>
-
-          <aside class="card card--note">
-            <h3>Direct</h3>
-            <p class="muted">
-              Email: <button class="linkLike" type="button" id="copyEmailBtn" data-email="mihaelahegstrom720@gmail.com">mihaelahegstrom720@gmail.com</button>
-            </p>
-
-            <div class="divider"></div>
-
-            <h3>Social</h3>
-            <ul class="links">
-              <li><a href="https://www.youtube.com/@mihaelahegstrom2740" target="_blank" rel="noopener">YouTube</a></li>
-              <li><a href="https://www.goodreads.com/author/list/6935530.Mihaela_S_Hegstrom" target="_blank" rel="noopener">Goodreads</a></li>
-              <li><a href="https://www.linkedin.com/in/mihaela-hegstrom-3352b3a3" target="_blank" rel="noopener">LinkedIn</a></li>
-            </ul>
+          <aside class="contact__aside">
+            <p class="muted">Email</p>
+            <button class="linkButton" type="button" id="copyEmail" data-email="mihaelahegstrom720@gmail.com">mihaelahegstrom720@gmail.com</button>
           </aside>
         </div>
       </div>
     </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="wrap footer__inner">
-        <p class="muted small">© <span id="year"></span> Mihaela S. Hegstrom</p>
-      </div>
-    </footer>
   </main>
 
-  <!-- BOOK MODAL -->
-  <dialog class="modal" id="bookModal" aria-label="Book details">
-    <form method="dialog" class="modal__panel">
-      <div class="modal__top">
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year"></span> Mihaela S. Hegstrom</p>
+      <p class="muted">Built with clarity and care.</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="bookModal" aria-labelledby="modalTitle">
+    <div class="modal__panel">
+      <button class="modal__close" type="button" id="closeModal" aria-label="Close">×</button>
+      <div class="modal__grid">
+        <img id="modalImage" src="" alt="" width="640" height="960" />
         <div>
-          <p class="kicker" id="mLang">Poetry</p>
-          <h3 id="mTitle">Book Title</h3>
-          <p class="muted" id="mMeta">Year</p>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc" class="muted"></p>
+          <a id="modalLink" class="btn" href="#" target="_blank" rel="noopener">Learn more</a>
         </div>
-        <button class="iconBtn" value="cancel" aria-label="Close dialog">✕</button>
       </div>
-
-      <p id="mDesc" class="modal__desc"></p>
-
-      <div class="modal__actions">
-        <a class="btn" id="mBuy" href="#" target="_blank" rel="noopener">Buy / Learn more</a>
-        <button class="btn btn--soft" value="cancel" type="submit">Close</button>
-      </div>
-    </form>
+    </div>
   </dialog>
 
-  <!-- Toast -->
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 </body>
 </html>

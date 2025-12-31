@@ -1,125 +1,160 @@
-/* Minimal JS: mobile menu, active links, theme toggle, book modal, copy helpers */
-const $ = (sel, root=document) => root.querySelector(sel);
-const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
+const $ = (sel, root = document) => root.querySelector(sel);
+const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
-const topbar = document.querySelector("[data-elevate]");
+const header = $("[data-header]");
 const navToggle = $(".nav__toggle");
-const navLinks = $("#navlinks");
+const navLinks = $(".nav__links");
 
-const toast = $("#toast");
-function showToast(msg){
-  toast.textContent = msg;
-  toast.classList.add("is-on");
-  window.clearTimeout(showToast._t);
-  showToast._t = window.setTimeout(() => toast.classList.remove("is-on"), 1600);
-}
-
-// Elevation on scroll
 function onScroll(){
-  if (window.scrollY > 6) topbar.classList.add("is-elevated");
-  else topbar.classList.remove("is-elevated");
+  if (window.scrollY > 8) header.classList.add("is-sticky");
+  else header.classList.remove("is-sticky");
 }
 window.addEventListener("scroll", onScroll, {passive:true});
 onScroll();
 
-// Mobile nav
 navToggle?.addEventListener("click", () => {
   const open = navLinks.classList.toggle("is-open");
   navToggle.setAttribute("aria-expanded", String(open));
 });
-$$(".nav__link").forEach(a => a.addEventListener("click", () => {
-  navLinks.classList.remove("is-open");
-  navToggle?.setAttribute("aria-expanded", "false");
-}));
-
-// Active link highlight
-const sections = ["about","books","media","contact"].map(id => document.getElementById(id)).filter(Boolean);
-const navMap = new Map($$(".nav__link").map(a => [a.getAttribute("href")?.replace("#",""), a]));
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    navMap.forEach(a => a?.classList.remove("is-active"));
-    const link = navMap.get(e.target.id);
-    link?.classList.add("is-active");
+$$('.nav__link').forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("is-open");
+    navToggle?.setAttribute("aria-expanded", "false");
   });
-}, {rootMargin: "-35% 0px -55% 0px", threshold: 0.01});
-sections.forEach(s => io.observe(s));
+});
 
-// Book modal
-const modal = $("#bookModal");
-const mTitle = $("#mTitle");
-const mMeta = $("#mMeta");
-const mLang = $("#mLang");
-const mDesc = $("#mDesc");
-const mBuy = $("#mBuy");
+const themeToggle = $("#themeToggle");
+const themeText = $("#themeText");
+const themeKey = "mih_theme";
 
-function openBook(btn){
-  mTitle.textContent = btn.dataset.title || "Book";
-  mMeta.textContent = btn.dataset.year || "";
-  mLang.textContent = btn.dataset.lang || "Poetry";
-  mDesc.textContent = btn.dataset.desc || "";
-  const href = btn.dataset.buy || "#";
-  mBuy.setAttribute("href", href);
-
-  if (typeof modal.showModal === "function") modal.showModal();
-  else modal.setAttribute("open", "true");
+function applyTheme(mode){
+  if (mode === "light") document.documentElement.dataset.theme = "light";
+  else document.documentElement.removeAttribute("data-theme");
+  themeText.textContent = mode === "light" ? "Light" : "Dark";
 }
 
-$$(".book").forEach(btn => btn.addEventListener("click", () => openBook(btn)));
+const stored = localStorage.getItem(themeKey);
+if (stored === "light" || stored === "dark") applyTheme(stored);
 
-// Contact form copy
-const form = $("#contactForm");
-const clearBtn = $("#clearBtn");
-const copyEmailBtn = $("#copyEmailBtn");
+themeToggle?.addEventListener("click", () => {
+  const current = document.documentElement.dataset.theme === "light" ? "light" : "dark";
+  const next = current === "light" ? "dark" : "light";
+  applyTheme(next);
+  localStorage.setItem(themeKey, next);
+});
+
+const modal = $("#bookModal");
+const modalTitle = $("#modalTitle");
+const modalDesc = $("#modalDesc");
+const modalImage = $("#modalImage");
+const modalLink = $("#modalLink");
+const modalClose = $("#closeModal");
+let lastFocus = null;
+
+function getFocusable(root){
+  return $$('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])', root)
+    .filter(el => !el.hasAttribute("disabled"));
+}
+
+function trapFocus(e){
+  if (e.key !== "Tab") return;
+  const focusable = getFocusable(modal);
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (e.shiftKey && document.activeElement === first){
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last){
+    e.preventDefault();
+    first.focus();
+  }
+}
+
+function openModal(card){
+  lastFocus = document.activeElement;
+  modalTitle.textContent = card.dataset.title || "Book";
+  modalDesc.textContent = card.dataset.desc || "";
+  modalImage.src = card.dataset.img || "";
+  modalImage.alt = `${card.dataset.title || "Book"} cover`;
+  modalLink.href = card.dataset.link || "#";
+  if (typeof modal.showModal === "function") modal.showModal();
+  else modal.setAttribute("open", "true");
+  modal.addEventListener("keydown", trapFocus);
+  modalClose.focus();
+}
+
+function closeModal(){
+  modal.removeEventListener("keydown", trapFocus);
+  if (typeof modal.close === "function") modal.close();
+  else modal.removeAttribute("open");
+  lastFocus?.focus();
+}
+
+$$('.bookCard').forEach(card => {
+  card.addEventListener("click", () => openModal(card));
+});
+
+modalClose?.addEventListener("click", closeModal);
+modal?.addEventListener("click", (e) => {
+  if (e.target === modal) closeModal();
+});
+modal?.addEventListener("cancel", (e) => {
+  e.preventDefault();
+  closeModal();
+});
+
+const toast = $("#toast");
+let toastTimer;
+function showToast(message){
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 1600);
+}
 
 async function copyText(text){
   try{
     await navigator.clipboard.writeText(text);
     return true;
   }catch{
-    // fallback
-    const ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed";
-    ta.style.left = "-9999px";
-    document.body.appendChild(ta);
-    ta.select();
+    const temp = document.createElement("textarea");
+    temp.value = text;
+    temp.style.position = "fixed";
+    temp.style.left = "-9999px";
+    document.body.appendChild(temp);
+    temp.select();
     const ok = document.execCommand("copy");
-    document.body.removeChild(ta);
+    document.body.removeChild(temp);
     return ok;
   }
 }
+
+const form = $("#contactForm");
+const clearForm = $("#clearForm");
 
 form?.addEventListener("submit", async (e) => {
   e.preventDefault();
   const name = $("#name").value.trim();
   const email = $("#email").value.trim();
   const message = $("#message").value.trim();
-
-  const compiled =
-`Hello Mihaela,
-
-${message}
-
-— ${name}
-${email}`.trim();
-
-  const ok = await copyText(compiled);
+  const body = `Hello Mihaela,\n\n${message}\n\n— ${name}\n${email}`.trim();
+  const ok = await copyText(body);
   showToast(ok ? "Message copied" : "Copy failed");
 });
 
-clearBtn?.addEventListener("click", () => {
+clearForm?.addEventListener("click", () => {
   $("#name").value = "";
   $("#email").value = "";
   $("#message").value = "";
   showToast("Cleared");
 });
 
-copyEmailBtn?.addEventListener("click", async () => {
-  const em = copyEmailBtn.dataset.email || copyEmailBtn.textContent.trim();
-  const ok = await copyText(em);
+const copyEmail = $("#copyEmail");
+copyEmail?.addEventListener("click", async () => {
+  const email = copyEmail.dataset.email || copyEmail.textContent.trim();
+  const ok = await copyText(email);
   showToast(ok ? "Email copied" : "Copy failed");
 });
 
-// Footer year
 $("#year").textContent = String(new Date().getFullYear());
